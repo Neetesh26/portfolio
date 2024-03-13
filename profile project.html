@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>profile</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+       html, body {
+            height: 100%;
+        width: 100%;
+            background: 
+            linear-gradient(to right, rgb(173, 168, 169) 0%,
+            rgb(209, 201, 202) 50% ,
+             rgb(82, 79, 79) 50%, rgb(82, 79, 79) 100%);
+        }
+
+        .container {
+            width: 400px;
+            height: 800px;
+            background-color: antiquewhite;
+            background: transparent;
+            backdrop-filter:
+             blur(800px);
+            /* filter: blur(10px); */
+            padding: 15px;
+            margin-left: 450px;
+        }
+
+        .profile {
+            padding: 10px;
+            background-color:rgba(82, 79, 79, 0.445);
+            /* background: transparent;
+            backdrop-filter: blur(800px); */
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .box div {
+            display: inline-block;
+            color: aliceblue;
+
+        }
+
+        .profile img {
+            background-color: aqua;
+            background: transparent;
+            border-radius: 50%;
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+
+        }
+
+        .box .name {
+            justify-content: flex-start;
+            background-color: aquamarine;
+            background: transparent;
+        }
+
+      
+        .addlogo {
+            /* margin-top: 3px; */
+            width: 50px;
+            height: 40px;
+
+            background-color: antiquewhite;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .addlogo i {
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .event {
+            background-color: aquamarine;
+            padding: 10px;
+            background-color:rgba(82, 79, 79, 0.418);
+            border-radius: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin: 10px;
+
+        }
+
+        .event h2 {
+            color: aliceblue;
+        }
+
+        .event img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 260px;
+            height: 120px;
+            border-radius: 15px;
+            margin-left: 50px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .event p {
+            margin-top: 10px;
+            margin-left: 8px;
+            color: aliceblue;
+        }
+
+        .contact {
+            color: aliceblue;
+            background-color: brown;
+            background: transparent;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 15px;
+            padding: 12px;
+            height: 250px;
+        }
+
+        .contact h2 {
+            background-color: aqua;
+background: transparent;
+            /* margin-right: 170px; */
+            padding-right: 8px;
+
+        }
+
+        .contact h2 p {
+            background-color: rgb(58, 60, 206);
+            background: transparent;
+            margin-right: 40px;
+            display: inline-block;
+            justify-content: space-between;
+            /* padding-left: 170px; */
+            float: right;
+        }
+
+        .contact .title h2 p i {
+            padding-left: 8px;
+        }
+
+        .online {
+            margin-top: 15px;
+
+            background-color: antiquewhite;
+            padding: 5px;
+            background: transparent;
+        }
+
+        .online img {
+            background-color: aqua;
+            background: transparent;
+            border-radius: 50%;
+            width: 50px;
+            height: auto;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .typing {
+            background-color: azure;
+            background: transparent;
+            margin-left: 80px;
+            margin-bottom: 4px;
+        }
+
+        .typing p {
+            margin-left: 8px;
+        }
+
+        .online .img1 .typing {
+            display: inline-block;
+
+        }
+        .title i{
+            cursor: pointer;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <body class="left">
+    
+</body>
+    <div class="container">
+        <div class="profile">
+            <h2 style="color: aliceblue;">Your profile</h2>
+            <div class="box">
+                <div class="img">
+                    <img src="main.jpeg" alt="">
+                </div>
+                <div class="name">
+                    <h2>Yash Kacham</h2>
+                    <h4> Pokemon Trainer</h4>
+                </div>
+                <div class="addlogo">
+                    <i class='bx bxs-contact'></i>
+                </div>
+            </div>
+        </div>
+        <div class="event">
+            <h2>Events</h2>
+            <img src="PokemonShow-Image.png" alt="">
+            <p>The pokemon show at <b><em>Tonight 7pm</em></b> all of you are intrested so contact me.. </p>
+        </div>
+        <div class="contact">
+            <div class="title">
+                <h2>Contact <p><i class='bx bx-video'></i>
+                        <i class='bx bx-search'></i>
+                    </p>
+                </h2>
+            </div>
+            <div class="online">
+                <div class="img1">
+                    <img src="1img.jpeg" alt="">
+                    <div class="typing">
+                        <h2>Pikachu </h2>
+                        <em>
+                            <p>typing...</p>
+                        </em>
+                    </div>
+                </div>
+                <div class="img1">
+                    <img src="abc.gif" alt="">
+                    <div class="typing">
+                        <h2>Hanuman ji </h2>
+                        <em>
+                            <p>typing...</p>
+                        </em>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

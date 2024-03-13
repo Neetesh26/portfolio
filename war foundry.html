@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>war foundry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family:   Courier ; */
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+
+        }
+
+
+
+        .nav {
+            height: 100px;
+            width: 100%;
+            /* background-color: rgb(160, 214, 216); */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px;
+            /* border-bottom: 1px solid black; */
+        }
+
+        .nav1 h3{
+            font-size: 15px;
+            font-weight: 300;
+            /* text-transform: uppercase; */
+            border: 1px solid rgba(0, 0, 0, 0.397);
+            border-radius: 20px;
+            padding: 8px;
+            color: rgba(0, 0, 0, 0.712);
+            /* background-color: rgb(126, 179, 223); */
+            position: relative;
+            overflow: hidden;
+        }
+        .nav1 h3::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: translate(0%,0%);
+            left: 0;
+            bottom: -100%;
+            background-color:  rgb(70, 147, 211);
+
+        }
+        .nav1 h3:hover::after{
+            bottom: 0;
+
+            transition: all ease .5s;
+        }
+        .nav1 h3 a{
+            position: relative;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            z-index: 99;
+        }
+        .nav1 h3:hover>a{
+            color: aliceblue;
+        }
+
+        .nav2 {
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            font-family: 'Gill Sans', sans-serif;
+        }
+
+        .nav3 button {
+            position: relative;
+            background-color: white;
+            border: 0.5px solid rgba(116, 112, 112, 0.596);
+            padding: 8px;
+            border-radius: 40px;
+            font-weight: 600;
+
+            overflow: hidden;
+
+
+        }
+
+        .nav3 button::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: translate(0%, 0%);
+            left: 0;
+            bottom: -100%;
+            background-color:  rgb(70, 147, 211);
+            border-radius: 50%;
+            /* mix-blend-mode: color-burn; */
+           
+        }
+
+        .nav3 button:hover::after {
+            bottom: 0;
+            border-radius: 10%;
+            transition: all ease .5s;
+            cursor: pointer;
+        }
+
+        .nav3 button a {
+            color: black;
+            position: relative;
+            text-decoration: none;
+            z-index: 99;
+        }
+
+        .nav3 button:hover>a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        /* #btn1 {
+            background-color: none;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.336);
+            border-radius: 20px;
+            font-weight: 600;
+         
+        }
+
+        #btn2 {
+            background-color: none;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.329);
+            border-radius: 20px;
+            font-weight: 600;
+            
+        } */
+
+        .main>h1 {
+            text-transform: uppercase;
+            position: absolute;
+            /* background-color: aquamarine; */
+            font-size: 120px;
+            color: rgba(0, 0, 0, 0.925);
+            font-weight: 900;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            top: 55%;
+            left: 50%;
+            text-align: center;
+            letter-spacing: 3px;
+            text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.349);
+        }
+
+        .aimg>img {
+            mix-blend-mode: multiply;
+            position: absolute;
+            height: 500px;
+
+            /* object-fit: cover; */
+            /* object-position: top; */
+            transform: translate(-50%, -50%);
+            top: 55%;
+            left: 50%;
+        }
+
+        .btm {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            bottom: 1%;
+            left: 50%;
+            font-size: 15px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.966);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .flow>img {
+
+            width: 100%;
+            height: 553px;
+        }
+
+        /* .icon{
+            position: absolute;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="nav1">
+                <h3><a href="#">Menu</a></h3>
+            </div>
+            <div class="nav2">
+                <h2>war foundry</h2>
+            </div>
+            <div class="nav3">
+                <button><a href="#">Log In</a></button>
+                <button><a href="#">Sign up</a> </button>
+            </div>
+        </div>
+        <h1>our advantages</h1>
+        <div class="aimg"><img src="4img.jpeg" alt=""></div>
+        <!-- <img src="8img.jpeg" alt="">
+        <img src="9IMG.jpeg" alt=""> -->
+        <!-- <img id="img1" src="1img.jpeg" alt=""> -->
+        <!-- <div class="flow"><img src="pexels.jpg" alt=""></div> -->
+        <div class="btm">Your Smile, Our Passion</div>
+        <div class="icons"></div>
+
+    </div>
+</body>
+
+</html>

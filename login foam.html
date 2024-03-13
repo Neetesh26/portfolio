@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--symbol buttons link import -->
+    <title>login foam</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: bisque;
+             min-height: 100vh;
+            background-image: url(flat-hand-drawn-hospital-reception-scene_52683-54613.jpg);
+            background-size: cover;
+          height: 50%;
+          width: 100%;
+       
+        }
+
+        .container {
+        
+            padding: 10px;
+            width: 500px;
+            height: 450px;
+            background-color:   #d8d6d634;
+            /* background: transparent; */
+            color: rgb(59, 38, 12);
+            box-shadow: 2px 2px 20px 6px rgba(0, 0, 0, 0.562);
+            border-radius: 15px;
+        }
+
+        .container h1 {
+            color: rgb(0, 0, 0);
+            /* text-shadow: 0px 0px 0px rgb(0, 0, 0); */
+            padding: 3px;
+            /* border: 2px solid black; */
+            margin-top: 29px;
+            margin-left: 150px;
+            margin-right: 150px;
+            border-radius: 8px;
+            text-align: center;
+
+        }
+
+        .container .input-box {
+
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 50px 0;
+
+            /* background-color: rgb(206, 207, 207); */
+        }
+        .container .input-box:hover{
+            background-color:rgba(255, 255, 255, 0.4) ;
+            
+            transition: .5px;
+             
+        }
+
+        .input-box,
+        input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            border: 2px solid rgb(0, 0, 0);
+           
+            border-radius: 40px;
+            margin-right: 80px;
+            color: #000000;
+            /* font-weight: bold; */
+
+            text-transform: uppercase;
+
+        }
+        
+       
+
+        .input-box input::placeholder {
+            color: #000000; 
+            padding-left: 15px;
+            font-weight: bold;
+        }
+        .input-box input::placeholder:hover{
+            color: black;
+        }
+        
+        .input-box input i {
+            position: relative;
+
+
+        }
+
+        .container .Forgot-password {
+            margin-top: -30px;
+            float: right;
+            position: relative;
+            padding-right: 8px;
+            
+        }
+        .container .Forgot-password :hover{
+            color: blue;
+            text-decoration:underline ;
+           
+        }
+
+        button {
+            margin-top: 20px;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 35px;
+            background-color: rgba(197, 193, 186, 0.336);
+           
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 36px;
+            font-weight: bold;
+            font-size: 19px;
+            text-transform: uppercase;
+            color: #000000;
+            /* text-shadow: 1px 1px 2px  rgb(255, 255, 255); */
+
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.795);
+            color: black;
+            transition: 0.10s;
+            cursor: pointer;
+        }
+        .register-link{
+            text-align: center;
+            justify-content: center;padding-top: 5px;
+        }
+        .register-link p{
+            color: #000000;
+        }
+        .register-link a:hover{
+            color: blue;
+            font-weight: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <foam action="">
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <input type="text" name="username" placeholder="username" required>
+
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" placeholder="password" required>
+
+            </div>
+
+            <div class="Forgot-password">
+                <!-- <label>
+            <INPUT type="checkbox">remember-me</label> -->
+                <a href="#">Forgot password</a>
+            </div>
+
+            <button type="submit" class="button">login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+
+        </foam>
+    </div>
+</body>
+
+</html>

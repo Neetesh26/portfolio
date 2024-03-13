@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing page</title>
+    <style>
+        body,html {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 255);
+        }
+        .container{
+          height: 100vh;
+            background-color:rgb(255, 255, 255);
+          padding: 20px;
+        }
+        .box {
+            padding: 20px;
+            width: 250px;
+            height: 340px;
+            background-color: rgba(189, 194, 194, 0.452);
+            border-radius: 20px;
+        }
+        .box h3 {
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .box h2 {
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+            margin-bottom: 6px;
+            color: rgb(6, 154, 180);
+        }
+
+        .box p {
+            background-color: rgb(99, 204, 204);
+            display: flex;
+            justify-content: center;
+            font-size: 17px;
+
+        }
+        .box:hover  {
+            color: aliceblue;
+            background: linear-gradient(90deg, rgba(5,125,205,1) 55%,  rgb(8, 166, 197) 87% );
+            cursor: pointer;
+            transition-duration: 10sec;
+        }
+        .box:hover > h2{
+            color: white;
+        }
+        .box:hover > .btn a{
+            background-color: aliceblue;
+            color: black;
+           
+        }
+        .btn a:hover{
+            box-shadow: 0px 0px 1px 1px rgb(255, 255, 255);
+        }
+
+        pre {
+            /* background-color: aquamarine; */
+            margin-bottom: 9px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn a {
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin-left: 70px;
+            margin-right: 70px;
+            padding: 10px;
+            font-size: medium;
+            color: rgba(240, 248, 255, 0.877);
+            background-color: rgba(0, 0, 0, 0.801);
+            border: none;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+       
+        .boxes{
+            display: flex;
+            justify-content:center;
+            gap: 30px;
+        }
+        
+        .title h2{
+          display: flex;
+          justify-content: center;
+          text-transform: uppercase;
+          margin-bottom: 6px;
+          font-size: xx-large;
+          color:rgb(7, 160, 187) ;
+        }
+        .title p{
+          display: flex;
+          justify-content: center;
+        }
+        .container{
+            background-color:azure;
+            width: 1000px;
+            height: 600px;
+            translate: 170px 10px;
+        }
+        .container p{
+            display: flex;
+            justify-content: center;
+        }
+        .detail a{
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin-left: 360px;
+            margin-right: 360px;
+            padding: 10px;
+            font-size: medium;
+            color: rgb(240, 248, 255);
+            background-color:rgb(3, 207, 207);
+            border: none;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .detail a:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+            background-color:rgba(0, 250, 250, 0.904);
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+        <div class="title">
+            <h2>pricing</h2>
+            <p>plans that work for everyone</p>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <h3>basic</h3>
+                <h2>&#36 4.99<br>/month</h2>
+                <p>
+                <pre> Eleifend cursur volutpat</pre>
+                <pre>risus convallis nam sed </pre>
+                <pre> quam sollicitudin eget leo at </pre>
+                <pre> erat cursur justo</pre>
+                </p>
+                <div class="btn">
+                    <a href="#">Join now</a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>super</h3>
+                <h2>&#36 19.99<br>/month</h2>
+                <p>
+                <pre> Eleifend cursur volutpat</pre>
+                <pre>risus convallis nam sed </pre>
+                <pre> quam sollicitudin eget leo at </pre>
+                <pre> erat cursur justo</pre>
+                </p>
+                <div class="btn">
+                    <a href="#">Join now</a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>enterprises</h3>
+                <h2>&#36 49.99<br>/month</h2>
+                <p>
+                <pre> Eleifend cursur volutpat</pre>
+                <pre>risus convallis nam sed </pre>
+                <pre> quam sollicitudin eget leo at </pre>
+                <pre> erat cursur justo</pre>
+                </p>
+                <div class="btn">
+                    <a href="#">Join now</a>
+                </div>
+            </div>
+        </div> 
+        <p>Need something  diffrent? No problem</p>
+    <div class="detail">
+        <a href="#">get in touch</a>
+    </div>
+    </div>
+   
+</body>
+
+</html>

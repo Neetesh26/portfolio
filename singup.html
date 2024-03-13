@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup foam </title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+            font-family: 'poppins';
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            max-width: 110vh;
+            background-color: #ffffff;
+            background-image: url(bg1.jpg);
+            
+            background-size: cover;
+
+        }
+
+        .container {
+            position: relative;
+            width: 640px;
+            height: 550px;
+            background: transparent;
+            /* background-image: url(2.jpg); */
+            /* background-size: cover; */
+            border: 1px solid rgb(0, 0, 0);
+            border: none;
+            box-shadow: 1px 1px 30px 15px rgb(0, 0, 0);
+            border-radius: 15px;
+            
+        }
+
+        .foam-box {
+           
+            position: relative;
+            /* top: 0; */
+            width: 50%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+           
+
+        }
+        
+        .foam-box-signup h2{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border: 3px solid rgba(119, 71, 71, 0.74);
+           border: none;
+           font-family:Lucida Handwriting ;
+           border-radius: 15PX;
+           box-shadow: 0px 2px 1px 1px rgba(31, 22, 22, 0.555);
+           margin: 20px;
+           margin-left: 245px;
+           padding-left: 2px;
+           margin-right: 250px;
+           height: 40px;
+           font-size: 30px;
+           /* text-decoration: underline 1px; */
+           font-weight:200;
+           text-shadow: 0px 2px 5px 10px rgba(138, 133, 133, 0.781);
+ }
+.container .input-box{
+    position: relative;
+    margin-right: 15px;
+    color: rgba(240, 248, 255, 0.788);
+    
+    
+    
+} 
+.input-box input{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px;
+    margin-top: 5px;
+    padding-left: 8px;
+    background: transparent;
+    color: aliceblue;
+    font-weight: bold;
+}
+.input-box input:hover{
+    /* background-color:rgb(192, 201, 201) ; */
+    background: transparent;
+    
+    
+}
+
+.input-box label{
+    padding-left: 10px; 
+    font-size: 20px;
+    text-transform:uppercase ;
+    font-weight: bold;
+    
+}
+.input-box input::placeholder{
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(240, 248, 255, 0.514);
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 10px;
+    margin-top: 40px;
+    
+    height: 40px;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 27px;
+    font-weight: 300;
+    /* font-family:Lucida Handwriting  ; */
+    box-shadow:  0px 2px 1px 1px rgba(15, 10, 10, 0.507);
+    color: rgba(216, 216, 216, 0.849);
+     
+}
+.button:hover{
+    background-color: rgba(95, 93, 93, 0.726);
+    cursor: pointer;
+}
+.login{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px; 
+    color: rgb(0, 0, 0);  
+}
+.login a{
+    color: rgb(6, 4, 114);
+}
+.login a:hover{
+     color: blue;
+     font-weight: bold;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="foam-box-signup">
+            <h2>Sign in </h2>
+            <form action="#">
+                <div class="input-box">
+                    <label for="">first name</label>
+                    <input type="text" placeholder="Enter your first name" required>
+                    
+                </div>
+                <div class="input-box">
+                    <label for="">Last name</label>
+                    <input type="text" placeholder="Enter your last name" required>
+                    
+                
+                <div class="input-box">
+                    <label for="">E-mail</label>
+                    <input type="email"  placeholder="xyz@gmail.com"  required>
+                    
+                </div>
+                <div class="input-box">
+                    <label for="">Create password</label>
+                    <input type="password"  required>
+                    
+                </div>
+                <button type="submit" class="button">Sign in</button>
+                <div class="login">
+                    <p>Alredy have an account?<a href="#">Login</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
